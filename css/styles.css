@@ -1,0 +1,151 @@
+/* Estilos para el fondo de la página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "my-header" 
+    "my-main"
+    "my-footer";
+    grid-template-rows: 250px 1fr 150px;
+}
+
+header {
+   
+    grid-area: my-header;
+    background: linear-gradient(to right, rgb(33, 85, 119), rgb(255, 255, 255), rgb(33, 85, 119));
+
+    }
+
+main {
+    display: flex;
+    grid-area: my-main;
+    padding: 50px;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(33, 85, 119), rgb(255, 255, 255), rgb(33, 85, 119));
+}
+
+footer {
+    grid-area: my-footer;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, rgb(33, 85, 119), rgb(255, 255, 255), rgb(33, 85, 119));
+}
+
+/* Fuente de Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap');
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+section article {
+    text-align: left;
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+    background: linear-gradient(to right, rgb(33, 85, 119), rgb(255, 255, 255), rgb(33, 85, 119));
+
+    border-radius: 10px;
+}
+
+/* Estilos para los h1 y h2 */
+h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.titulo {  
+    font-size: 65px;
+
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+h1, h2 {
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    color:rgb(0, 0, 0);
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/* Estilo para los parrafos */
+p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Signika Negative', sans-serif;
+    color: rgb(5, 0, 0);
+}
+
+
+
+/* Estilos para el menú horizontal */
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px; /* Ajusta el espacio entre elementos del menú */
+}
+
+header nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #412121; /* Cambia el color de los enlaces */
+    font-weight: bold;
+    font-size: 20px; /* Ajusta el tamaño de fuente si es necesario */
+}
+
+/* Estilo para mostrar el nível actual donde se encuentra */
+.actual {
+    background-color: #fff4b3d8;
+}
+
+/* Estilos para los enlaces visitados */
+li a:visited {
+    color: rgb(6, 19, 24);
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-link {
+    color: rgb(47, 50, 236);
+    text-decoration: none;
+}
+
+/* Estilo para los enlaces de redes sociales visitados */
+.social-link:visited {
+    color: rgb(47, 50, 236);
+}
+
+
+/* Estilos para el grid de productos */
+.grid_prod {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    line-height: 0;
+    grid-gap: 10px;
+}
+
+.grid_prod img {
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    padding: 10px;
+    margin-left: 10px;
+}
